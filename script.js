@@ -12,7 +12,7 @@ let categoryImage = [
 ];
 const mappedImages = categoryImage.map((item, index) => {
   return `<div class="category-table" key=${index} >
-                  <img src=${item}  />  
+                  <img src=${item} class="category-table-images"  />  
               </div>`;
 });
 //
@@ -26,7 +26,7 @@ let categoryImage2 = [
 ];
 const mappedImages2 = categoryImage2.map((item, index) => {
   return `<div class="category-table-2" key=${index} >
-                    <img src=${item} class="category-table-image" />  
+                    <img src=${item} class="category-table-images" />  
                 </div>`;
 });
 //
@@ -40,7 +40,7 @@ let bestOfClothing = [
 ];
 const bestOfClothing1 = bestOfClothing.map((item, index) => {
   return `<div class="bestOfClothing1" key=${index} >
-                    <img src=${item} class="bestOfClothing1-card" />  
+                    <img src=${item} class="category-table-images" />  
                 </div>`;
 });
 //

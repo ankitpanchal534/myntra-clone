@@ -23,14 +23,6 @@ header {
   background-color: white;
 }
 
-body,
-html {
-  width: 100vw;
-  margin: 0px;
-  padding: 0px;
-  align-content: center;
-}
-
 .header-li {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -80,96 +72,86 @@ ul li:hover {
   cursor: pointer;
   font-weight: 600;
 }
-.banner {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  width: auto;
-}
 
-.banner-image-1 {
-  width: 100%;
-}
-.banner-image {
-  width: 100%;
-}
-.category-table {
-  display: flex;
-  margin: -5px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 .category-table-2,
-.bestOfClothing1 {
-  display: flex;
-}
-.category-table-image,
-.bestOfClothing1-card {
-  width: 100%;
-}
-.categoryData-card {
-  padding: -5px;
-}
-.header-toggle-btn {
-  display: none;
-}
-
-li::selection {
-  color: red;
-  background-color: lightcyan;
-}
-.play-store-image {
-  height: 50px;
-}
-
-.bestbyCategory {
+.bestOfClothing1,
+.category-table {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  margin: -5px;
 }
+.category-table-images {
+  width: 18vw;
+}
+
+.play-store-image {
+  width: 100px;
+}
+.bestbyCategory {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .bestbyCategory-card {
   width: 17vw;
   margin: -5px;
 }
-footer {
+body {
+  height: auto;
+  overflow-x: hidden;
+}
+.main-content {
+  margin-top: 100px;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner-image {
+  width: 90%;
+  margin: 0% 5%;
+}
+.footer-part {
   margin-top: 10px;
   display: flex;
   justify-content: center;
+  width: 100%;
   background-color: rgb(248, 245, 245);
 }
 
-@media screen and (max-width: 792px) {
-  .bestbyCategory-card {
-    width: 48%;
-  }
-  .header-part-1 li {
-    display: none;
-    width: 100%;
-  }
+.footer-ul {
+  font-size: 1rem;
 }
-
+.footer-icon {
+  width: 20px;
+  height: 20px;
+}
+.header-toggle-btn {
+  padding: 7px;
+  background-color: transparent;
+  border: 1px ridge;
+  font-size: large;
+  cursor: pointer;
+}
 @media screen and (max-width: 1132px) {
+  body {
+    margin: 0;
+  }
   header {
-    padding-right: 40px;
-    padding-left: 10px;
+    width: 90%;
+    padding: 0% 5%;
   }
-  .header-part-1 li {
-    font-size: 13px;
-  }
-  .banner-image {
-    width: 100%;
-  }
-  .category-table-2,
-  .bestOfClothing1 {
-    display: flex;
-    flex-direction: column;
+  .hundred-percent,
+  .header-li {
+    display: none;
   }
   .header-toggle-btn {
     display: block;
     margin-left: 7px;
+  }
+  .footer-ul {
+    font-size: 0.5rem;
   }
 }
